@@ -1,0 +1,27 @@
+.movie-container {
+    margin-left: 18%;
+    width: 75%;
+    padding: 2% 10% 5% 0;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 1em 5%;
+    grid-template-areas: "image image image image";
+}
+
+@media (max-width: 675px) {
+   .movie-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5% 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "image image";
+   }
+}
+
+@media (min-width: 675px) and (max-width: 1100px) {
+    .movie-container {
+grid-template-columns: repeat(3, 33%);
+grid-template-areas: "image image image";
+    }
+}
+
